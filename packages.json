@@ -1,0 +1,46 @@
+{
+  "cask":[
+    {
+      "name":"java8",
+      "install": true
+    },
+    {
+      "name":"iterm2",
+      "install": true
+    },
+    {
+      "name":"vagrant",
+      "install": true
+    },
+    {
+      "name":"vagrant-manager",
+      "install": true
+    },
+    {
+      "name":"sublime-text",
+      "install": true
+    },
+    {
+      "name":"owncloud",
+      "install": true
+    },
+    {
+      "name":"postman",
+      "install": true
+    },
+    {
+      "name":"zoho-docs",
+      "install": true
+    },
+    {
+      "name":"keepassx",
+      "install": true
+    }
+  ],
+  "brew":[
+    {
+      "name":"csshx",
+      "install": true
+    }
+  ]
+}
