@@ -1,7 +1,6 @@
 #!/bin/sh
 echo "Installing Homebrew cask"
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-brew install caskroom/cask/brew-cask
 echo "Homebrew cask installed"
 
 echo "Installing jenkins api client gem"
