@@ -1,6 +1,6 @@
 #!/bin/sh
 echo "Installing Homebrew cask"
-ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh | bash
 echo "Homebrew cask installed"
 
 echo "Installing jenkins api client gem"
@@ -10,5 +10,19 @@ echo "jenkins api client gem installed"
 echo "Running system setup ruby script"
 ruby system-set-up.rb
 echo "system setup ruby script finished"
+
+# SDK Man stuff
+curl -s https://get.sdkman.io | bash
+source "/Users/$(whoami)/.sdkman/bin/sdkman-init.sh"
+
+for version in $(sdk list java | grep amzn | tr -s ' ' | cut -d' ' -f 11); do
+	echo "Installing java version $version"
+	sdk install java $version
+done
+
+sdkmanpackages=( "maven" "gradle" )
+for package in ${!sdkmanpackages[@]}; do
+	echo "${sdkmanpackages[$package]}"
+done
 
 echo "Done!"
