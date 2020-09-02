@@ -1,45 +1,49 @@
 {
   "cask":[
     {
-      "name":"java8",
+      "name": "iterm2",
       "install": true
     },
     {
-      "name":"iterm2",
+      "name": "vagrant",
       "install": true
     },
     {
-      "name":"vagrant",
+      "name": "vagrant-manager",
       "install": true
     },
     {
-      "name":"vagrant-manager",
+      "name": "sublime-text",
       "install": true
     },
     {
-      "name":"sublime-text",
+      "name": "owncloud",
       "install": true
     },
     {
-      "name":"owncloud",
+      "name": "postman",
       "install": true
     },
     {
-      "name":"postman",
+      "name": "zoho-docs",
       "install": true
     },
     {
-      "name":"zoho-docs",
-      "install": true
-    },
-    {
-      "name":"keepassx",
+      "name": "keepassx",
       "install": true
     }
   ],
   "brew":[
     {
-      "name":"csshx",
+      "name": "csshx",
+      "install": true
+    },
+    {
+      "name": "jq",
+      "install": true
+    },
+    {
+      "name": "watch",
       "install": true
     }
   ]
