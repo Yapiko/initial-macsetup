@@ -13,16 +13,16 @@ echo "system setup ruby script finished"
 
 # SDK Man stuff
 curl -s https://get.sdkman.io | bash
-source "/Users/$(whoami)/.sdkman/bin/sdkman-init.sh"
+source ~/.sdkman/bin/sdkman-init.sh
 
-for version in $(sdk list java | grep amzn | tr -s ' ' | cut -d' ' -f 11); do
+for version in $(sdk list java | grep amzn | cut -d'|' -f 6); do
 	echo "Installing java version $version"
 	sdk install java $version
 done
 
 sdkmanpackages=( "maven" "gradle" )
 for package in ${!sdkmanpackages[@]}; do
-	echo "${sdkmanpackages[$package]}"
+	sdk install "${sdkmanpackages[$package]}"
 done
 
 echo "Done!"
