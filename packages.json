@@ -17,15 +17,7 @@
       "install": true
     },
     {
-      "name": "owncloud",
-      "install": true
-    },
-    {
       "name": "postman",
-      "install": true
-    },
-    {
-      "name": "zoho-docs",
       "install": true
     },
     {
